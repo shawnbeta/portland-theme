@@ -1,0 +1,41 @@
+@import (reference) 'styles.less';
+
+.heroPanel {
+  @media(max-width: @screen-xs-max) {
+    height: 337px;
+    background: url('../../img/shawn3.jpg') bottom left;
+  }
+  @media(min-width: @screen-sm-min){
+    height: 337px;
+    background: url('../../img/shawn2.jpg') bottom left;
+  }
+  width: 100%;
+  position: relative;
+  .wrapper {
+    width: 100%;
+    position: absolute;
+    @media(min-width: @screen-sm-min){
+      bottom: 20px;
+    }
+    @media(max-width: @screen-xs-max){
+      bottom: 0px;
+    }
+    .text {
+      margin-left: 20px;
+      background: @red;
+      color: @white1;
+      font-size: 23px;
+      padding: 10px;
+      @media(min-width: @screen-sm-min){
+        max-width: 35%;
+      }
+
+    }
+  }
+}
+
+
+//@media(max-width: @screen-xs-max){}
+//@media(min-width: @screen-sm-min){} /* deprecated: @screen-tablet, or @screen-sm */
+//@media(min-width: @screen-md-min){} /* deprecated: @screen-desktop, or @screen-md */
+//@media(min-width: @screen-lg-min){} /* deprecated: @screen-lg-desktop, or @screen-lg */

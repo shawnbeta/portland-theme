@@ -1,0 +1,40 @@
+name = Portland Theme
+description = Custom theme designed for Janet Hale by Shawn Williams. http://shawnbeta.com
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = assets/dev/css/bootstrap.css
+stylesheets[all][] = assets/dev/css/main.css
+stylesheets[all][] = assets/dev/css/globals.css
+stylesheets[all][] = assets/dev/css/header.css
+stylesheets[all][] = assets/dev/css/footer.css
+stylesheets[all][] = assets/dev/css/home.css
+stylesheets[all][] = assets/dev/css/hero.css
+stylesheets[all][] = assets/dev/css/nav.css
+stylesheets[all][] = assets/dev/css/pages.css
+stylesheets[all][] = assets/dev/css/variables.css
+stylesheets[all][] = assets/dev/css/overrides.css
+
+scripts[] = assets/dev/scripts/libs.js
+scripts[] = assets/dev/scripts/app.js
+scripts[] = assets/dev/scripts/main.js
+scripts[] = assets/dev/scripts/overrides.js
+scripts[] = assets/dev/scripts/contrib/jquery.touchSwipe.js
+
+
+
+;Custom modules
+scripts[] = assets/dev/scripts/modules/ui/menu.js
+
+
+
+
+regions[header_block] = Header Block
+regions[content_top] = Content Top
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+
+; Information added by Drupal.org packaging script on 2014-11-19
+version = "7.34"
+project = "drupal"
+datestamp = "1416429488"

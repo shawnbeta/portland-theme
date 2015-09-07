@@ -1,0 +1,129 @@
+@import (reference) 'styles.less';
+.element-hidden {
+  display: none;
+}
+
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+}
+
+
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: static !important;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+}
+
+
+.persistentMenuToggle{
+  position: fixed;
+  z-index: 3;
+  font-size: 30px;
+  background: @white1;
+  padding: 5px 10px;
+  @media (max-width: @screen-xs-max) {
+    top: 5px;
+  }
+  @media (min-width: @screen-sm-min) {
+    top: 20px;
+  }
+  left: 20px;
+  border: 1px solid @red;
+  a{
+    color: @red;
+  }
+}
+
+
+#swNavBar {
+  padding: 8px;
+  background: @blue;
+  position: relative;
+  z-index: 3;
+    a{
+    color: @white1;
+      &:hover {
+        color: yellow;
+      }
+  }
+}
+
+#primaryToggle {
+  font-size: 30px;
+  text-align: left;
+  position: relative;
+  z-index: 3;
+}
+
+#details {
+  @media(max-width: @screen-sm-max){
+    margin-left: -25%;
+    width: 100%;
+  }
+
+}
+
+#swLogo {
+  display: block;
+
+
+  .name,
+  .title {
+    @media(max-width: @screen-xs-max){
+      display: block;
+    }
+    @media(min-width: @screen-sm-min){
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .name {
+    font-family: @slab;
+    @media(min-width: @screen-sm-min){
+      font-size: 28px;
+      &:after {
+        font-family: @fa;
+        content: "\2022";
+        padding: 0 10px;
+      }
+
+    }
+    @media(max-width: @screen-xs-max){
+      font-size: 18px;
+    }
+  }
+
+  .title{
+    @media(min-width: @screen-sm-min){
+      font-size: 20px;
+    }
+    @media(max-width: @screen-xs-max){
+      font-size: 14px;
+    }
+  }
+
+
+  .contact {
+    span:first-child {
+      &:after{
+        font-family: @fa;
+        content: "\2022";
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+
+
+//@media(max-width: @screen-xs-max){}
+//@media(min-width: @screen-sm-min){} /* deprecated: @screen-tablet, or @screen-sm */
+//@media(min-width: @screen-md-min){} /* deprecated: @screen-desktop, or @screen-md */
+//@media(min-width: @screen-lg-min){} /* deprecated: @screen-lg-desktop, or @screen-lg */

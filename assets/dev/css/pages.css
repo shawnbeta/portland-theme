@@ -1,0 +1,267 @@
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.pager:before,
+.pager:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.pager:after {
+  clear: both;
+}
+.namedAnchor {
+  display: block;
+  height: 0;
+}
+.bootstrapLogo {
+  color: red;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  padding: -10px;
+  margin: -20px;
+  display: block;
+}
+.remoteTitleLink {
+  display: none;
+}
+.swRecommendationWrap .swTitle {
+  display: none;
+}
+.swRecommendationWrap .remoteTitleLink {
+  display: block;
+}
+.projectPage .panelTitle {
+  padding-bottom: 20px;
+}
+.projectPage .pageMenu {
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .projectPage .inlineLinks a {
+    margin-bottom: 10px;
+  }
+}
+.about {
+  text-align: left;
+}
+.about .swImg {
+  margin: 0 auto 20px;
+}
+.about p {
+  padding-bottom: 20px;
+}
+.about .myStatus {
+  background: #f2f2f2;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+.about .myStatus .swTitle {
+  padding-bottom: 8px;
+}
+.about .myStatus ul {
+  line-height: 1.85em;
+}
+.about .myStatus ul li {
+  list-style: circle;
+  margin-left: 20px;
+}
+.socialPage .swTitle {
+  font-size: 22px;
+  text-align: center;
+}
+.socialPage .swText p {
+  text-align: center;
+}
+.socialPage .galleryPanel li {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .socialPage .galleryPanel li {
+    text-align: center;
+  }
+  .socialPage .galleryPanel li img {
+    display: inline;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .socialPage .galleryPanel li {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 768px) {
+  .socialPage .galleryPanel li {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .socialPage .galleryPanel li {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .socialPage .galleryPanel li {
+    float: left;
+    width: 25%;
+  }
+}
+.socialPage .swPhotoCollectionWrap p {
+  text-align: center;
+}
+.socialPage .swVideoWrap {
+  max-width: 650px;
+  background: #d9d9d9;
+  margin: 0 auto;
+  padding: 15px;
+}
+.socialPage .swVideoWrap p {
+  text-align: center;
+}
+.socialPage .swVideoWrapper,
+.videoPage .swVideoWrapper {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swPhoto,
+.photoCollectionPage {
+  text-align: center;
+  margin-top: 20px;
+}
+.swPhoto.coverPhoto .field-item,
+.photoCollectionPage.coverPhoto .field-item,
+.swPhoto.swCollection .field-item,
+.photoCollectionPage.swCollection .field-item {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .swPhoto.coverPhoto .field-item,
+  .photoCollectionPage.coverPhoto .field-item,
+  .swPhoto.swCollection .field-item,
+  .photoCollectionPage.swCollection .field-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .swPhoto.coverPhoto .field-item img,
+  .photoCollectionPage.coverPhoto .field-item img,
+  .swPhoto.swCollection .field-item img,
+  .photoCollectionPage.swCollection .field-item img {
+    display: inline;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .swPhoto.coverPhoto .field-item,
+  .photoCollectionPage.coverPhoto .field-item,
+  .swPhoto.swCollection .field-item,
+  .photoCollectionPage.swCollection .field-item {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 768px) {
+  .swPhoto.coverPhoto .field-item,
+  .photoCollectionPage.coverPhoto .field-item,
+  .swPhoto.swCollection .field-item,
+  .photoCollectionPage.swCollection .field-item {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .swPhoto.coverPhoto .field-item,
+  .photoCollectionPage.coverPhoto .field-item,
+  .swPhoto.swCollection .field-item,
+  .photoCollectionPage.swCollection .field-item {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .swPhoto.coverPhoto .field-item,
+  .photoCollectionPage.coverPhoto .field-item,
+  .swPhoto.swCollection .field-item,
+  .photoCollectionPage.swCollection .field-item {
+    float: left;
+    width: 25%;
+  }
+}
+.photoCollectionPage .item-list ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .photoCollectionPage .item-list ul li {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .photoCollectionPage .item-list ul li img {
+    display: inline;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .photoCollectionPage .item-list ul li {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) and (min-width: 768px) {
+  .photoCollectionPage .item-list ul li {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .photoCollectionPage .item-list ul li {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .photoCollectionPage .item-list ul li {
+    float: left;
+    width: 25%;
+  }
+}
+.contactPage {
+  text-align: center;
+}
+.contactPage .primaryContactMethods {
+  margin-bottom: 30px;
+}
+.experiencePage ul li:after {
+  width: 90%;
+  margin: 0 auto;
+  content: '';
+  height: 1px;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: #d9d9d9;
+}
+.experiencePage .swTitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.experiencePage p {
+  text-align: center;
+}

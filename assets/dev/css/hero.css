@@ -1,0 +1,59 @@
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.pager:before,
+.pager:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.pager:after {
+  clear: both;
+}
+.heroPanel {
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .heroPanel {
+    height: 337px;
+    background: url('../../img/shawn3.jpg') bottom left;
+  }
+}
+@media (min-width: 768px) {
+  .heroPanel {
+    height: 337px;
+    background: url('../../img/shawn2.jpg') bottom left;
+  }
+}
+.heroPanel .wrapper {
+  width: 100%;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .heroPanel .wrapper {
+    bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .heroPanel .wrapper {
+    bottom: 0px;
+  }
+}
+.heroPanel .wrapper .text {
+  margin-left: 20px;
+  background: #d73e33;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .heroPanel .wrapper .text {
+    max-width: 35%;
+  }
+}

@@ -1,0 +1,218 @@
+@import (reference) 'styles.less';
+
+.namedAnchor {
+  //padding-top: 8px;
+  display: block;
+  height:0;
+}
+
+
+.bootstrapLogo {
+  color: red;
+  font-family: @hel;
+  font-size: 60px;
+  padding: -10px;
+  margin: -20px;
+  display: block;
+}
+
+.remoteTitleLink{
+  display:none;
+}
+
+.swRecommendationWrap{
+  .swTitle {
+    display: none;
+  }
+  .remoteTitleLink{
+    display: block;
+  }
+}
+
+
+// Project Page
+.projectPage {
+
+
+
+  .panelTitle{
+    padding-bottom: 20px;
+  }
+  .pageMenu{
+    padding-top: 20px;
+  }
+  .inlineLinks a{
+    @media (max-width: @screen-xs-max) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// ABOUT
+.about {
+  text-align: left;
+  .swImg{
+    margin: 0 auto 20px;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+
+  .myStatus{
+    background: @dark6;
+    font-size: 16px;
+    padding: 10px 15px;
+    .swTitle{
+      padding-bottom: 8px;
+    }
+    ul {
+      line-height: 1.85em;
+      li {
+        list-style: circle;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+// Social page
+.socialPage {
+
+
+  .swTitle{
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .swText p{
+    text-align: center;
+  }
+
+  .galleryPanel {
+
+    li {
+      margin-bottom: 20px;
+
+      @media (max-width: @screen-xs-max) {
+        //.make-xs-column(12);
+        text-align: center;
+        img {
+          display: inline;
+        }
+      }
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        .make-sm-column(6);
+      }
+      @media (min-width: @screen-md-min) {
+        .make-md-column(3);
+      }
+    }
+  }
+  
+  // Special Cases
+  .swPhotoCollectionWrap{
+    p{
+      text-align: center;
+    }
+  }
+
+  .swVideoWrap {
+    max-width: 650px;
+    background: @dark5;
+    margin: 0 auto;
+    padding: 15px;
+
+    p{
+      text-align: center;
+    }
+  }
+}
+
+.socialPage,
+.videoPage {
+  .swVideoWrapper {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//Photo Galleries
+.swPhoto,
+.photoCollectionPage{
+  text-align: center;
+  margin-top: 20px;
+  &.coverPhoto,
+  &.swCollection {
+
+
+      .field-item {
+        margin-bottom: 20px;
+        @media (max-width: @screen-xs-max) {
+          //.make-xs-column(12);
+          text-align: center;
+          margin-bottom: 20px;
+          img {
+            display: inline;
+          }
+        }
+
+
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+          .make-sm-column(6);
+        }
+        @media (min-width: @screen-md-min) {
+          .make-md-column(3);
+        }
+      }
+  }
+}
+
+.photoCollectionPage {
+
+  .item-list ul li{
+    display: block;
+    margin-bottom: 20px;
+    @media (max-width: @screen-xs-max) {
+      //.make-xs-column(12);
+      text-align: center;
+      margin-bottom: 20px;
+      img {
+        display: inline;
+      }
+    }
+
+
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .make-sm-column(6);
+    }
+    @media (min-width: @screen-md-min) {
+      .make-md-column(3);
+    }
+  }
+}
+
+.contactPage{
+  text-align: center;
+  .primaryContactMethods{
+    margin-bottom: 30px;
+  }
+}
+
+.experiencePage {
+  ul li {
+    &:after{
+      .panelBreak;
+      background: @dark5;
+    }
+  }
+  .swTitle{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  p{
+    text-align: center;
+  }
+
+
+}

@@ -1,0 +1,146 @@
+@import (reference) 'styles.less';
+
+#mask{
+  position: fixed;
+  background: @dark1;
+  opacity: .8;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
+  display: none;
+}
+
+
+#menuBox {
+  text-align: left;
+  position: fixed;
+  overflow: hidden;
+  left: -320px;
+  width: 320px;
+  bottom: 0;
+  top: 0;
+  z-index: 4;
+  height: 100%;
+  background: @red;
+  ul{
+    display: block;
+    width: 337px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  a{
+    background: @red;
+    color: @white1;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    text-transform: capitalize;
+    &.swClose{
+      text-align: right;
+      padding: 5px 10px;
+      background: @gold;
+      color: @red;
+      font-size: 30px;
+    }
+    &:hover {
+      background: @red-dark;
+      color: yellow;
+      //font-weight: 900;
+    }
+  }
+
+
+
+  .home,
+  .projects,
+  .frontEnd,
+  .backEnd,
+  .social,
+  .experience,
+  .about,
+  .contact,
+  .resume,
+  .close{
+    padding-right: 15px;
+  }
+
+
+
+  i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+
+
+
+
+  //.home{
+  //  display: block;
+  //  &:before{
+  //    content: '\f015';
+  //    font-family: @fa;
+  //  }
+  //}
+  //
+  //.projects:before{
+  //  content: '\f1fc';
+  //  font-family: @fa;
+  //}
+  //
+  //.frontEnd:before{
+  //  content: '\f269';
+  //  font-family: @fa;
+  //}
+  //
+  //.backEnd:before{
+  //  content: '\f233';
+  //  font-family: @fa;
+  //}
+  //
+  //.social:before{
+  //  content: '\f1e0';
+  //  font-family: @fa;
+  //}
+  //
+  //.experience:before{
+  //  content: '\f091';
+  //  font-family: @fa;
+  //}
+  //
+  //.about:before{
+  //  content: '\f129';
+  //  font-family: @fa;
+  //}
+  //
+  //
+  //.contact:before{
+  //  content: '\f003';
+  //  font-family: @fa;
+  //}
+  //
+  //.resume:before{
+  //  content: '\f1c1';
+  //  font-family: @fa;
+  //}
+  //
+  //.menuToggler:before{
+  //  content: '\f00d';
+  //  font-family: @fa;
+  //}
+
+
+
+
+}
+
+
+
+
+//@media(max-width: @screen-xs-max){}
+//@media(min-width: @screen-sm-min){} /* deprecated: @screen-tablet, or @screen-sm */
+//@media(min-width: @screen-md-min){} /* deprecated: @screen-desktop, or @screen-md */
+//@media(min-width: @screen-lg-min){} /* deprecated: @screen-lg-desktop, or @screen-lg */

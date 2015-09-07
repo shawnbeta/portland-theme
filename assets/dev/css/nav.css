@@ -1,0 +1,82 @@
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.pager:before,
+.pager:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.pager:after {
+  clear: both;
+}
+#mask {
+  position: fixed;
+  background: #000000;
+  opacity: .8;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
+  display: none;
+}
+#menuBox {
+  text-align: left;
+  position: fixed;
+  overflow: hidden;
+  left: -320px;
+  width: 320px;
+  bottom: 0;
+  top: 0;
+  z-index: 4;
+  height: 100%;
+  background: #d73e33;
+}
+#menuBox ul {
+  display: block;
+  width: 337px;
+  height: 100%;
+  overflow-y: scroll;
+}
+#menuBox a {
+  background: #d73e33;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+#menuBox a.swClose {
+  text-align: right;
+  padding: 5px 10px;
+  background: #f1c604;
+  color: #d73e33;
+  font-size: 30px;
+}
+#menuBox a:hover {
+  background: #a22920;
+  color: yellow;
+}
+#menuBox .home,
+#menuBox .projects,
+#menuBox .frontEnd,
+#menuBox .backEnd,
+#menuBox .social,
+#menuBox .experience,
+#menuBox .about,
+#menuBox .contact,
+#menuBox .resume,
+#menuBox .close {
+  padding-right: 15px;
+}
+#menuBox i {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}

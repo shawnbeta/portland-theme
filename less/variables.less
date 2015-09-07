@@ -1,0 +1,63 @@
+
+@import (reference) 'styles.less';
+
+// Hues
+@dark1: hsla(0, 0%, 0%, 1);
+@dark2: hsla(0, 0%, 25%, 1);
+@dark3: hsla(0, 0%, 50%, 1);
+@dark4: hsla(0, 0%, 75%, 1);
+@dark5: hsla(0, 0%, 85%, 1);
+@dark6: hsla(0, 0%, 95%, 1);
+
+
+// Shade
+@shade1: hsla(0, 0%, 50%, .05);
+@shade2: hsla(0, 0%, 85%, .05);
+
+//Colors
+@white1: #fff;
+@red: hsla(4, 67%, 52%, 1);
+@blue: hsla(218, 93%, 62%, 1);
+@gold: hsla(49, 97%, 48%, 1);
+@green: hsla(129, 77%, 62%, 1);
+
+@red-dark: hsla(4, 67%, 38%, 1);
+@blue-dark: hsla(218, 93%, 48%, 1);
+@gold-dark: hsla(49, 97%, 34%, 1);
+
+// Fonts
+@fa: 'FontAwesome';
+@standard: 'Roboto', sans-serif;
+@slab: 'Roboto Slab', serif;
+@mono: 'Roboto Mono' sans-serif;
+@condensed: 'Roboto Condensed', sans-serif;
+@hel: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
+// Patterns
+.checkered {
+  background-color:@dark4;
+  background-image: linear-gradient(90deg, @shade1 50%, transparent 50%),
+  linear-gradient(@shade1 50%, transparent 50%);
+  background-size:25px 25px;
+}
+
+.dots{
+  background:
+  radial-gradient(@dark3 15%, transparent 16%) 0 0,
+  radial-gradient(@dark3 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 60%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 60%) 8px 9px;
+  background-color: @dark4;
+  background-size:16px 16px;
+}
+
+.carbon {
+  background-image:url(
+  'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4');
+}
+
+//@media(max-width: @screen-xs-max){}
+//@media(min-width: @screen-sm-min){} /* deprecated: @screen-tablet, or @screen-sm */
+//@media(min-width: @screen-md-min){} /* deprecated: @screen-desktop, or @screen-md */
+//@media(min-width: @screen-lg-min){} /* deprecated: @screen-lg-desktop, or @screen-lg */

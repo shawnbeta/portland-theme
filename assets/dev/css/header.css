@@ -1,0 +1,130 @@
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.pager:before,
+.pager:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.pager:after {
+  clear: both;
+}
+.element-hidden {
+  display: none;
+}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+}
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: static !important;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+}
+.persistentMenuToggle {
+  position: fixed;
+  z-index: 3;
+  font-size: 30px;
+  background: #ffffff;
+  padding: 5px 10px;
+  left: 20px;
+  border: 1px solid #d73e33;
+}
+@media (max-width: 767px) {
+  .persistentMenuToggle {
+    top: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .persistentMenuToggle {
+    top: 20px;
+  }
+}
+.persistentMenuToggle a {
+  color: #d73e33;
+}
+#swNavBar {
+  padding: 8px;
+  background: #4486f8;
+  position: relative;
+  z-index: 3;
+}
+#swNavBar a {
+  color: #ffffff;
+}
+#swNavBar a:hover {
+  color: yellow;
+}
+#primaryToggle {
+  font-size: 30px;
+  text-align: left;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 991px) {
+  #details {
+    margin-left: -25%;
+    width: 100%;
+  }
+}
+#swLogo {
+  display: block;
+}
+@media (max-width: 767px) {
+  #swLogo .name,
+  #swLogo .title {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #swLogo .name,
+  #swLogo .title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+#swLogo .name {
+  font-family: 'Roboto Slab', serif;
+}
+@media (min-width: 768px) {
+  #swLogo .name {
+    font-size: 28px;
+  }
+  #swLogo .name:after {
+    font-family: 'FontAwesome';
+    content: "\2022";
+    padding: 0 10px;
+  }
+}
+@media (max-width: 767px) {
+  #swLogo .name {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  #swLogo .title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  #swLogo .title {
+    font-size: 14px;
+  }
+}
+#swLogo .contact span:first-child:after {
+  font-family: 'FontAwesome';
+  content: "\2022";
+  padding: 0 10px;
+}
